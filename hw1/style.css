@@ -1,0 +1,14 @@
+
+main {
+    background-color: blue;
+}
+
+section {
+    background-color: white;  
+    margin: auto;
+    padding: 20px;  
+}
+
+main > div {
+    height: 100px;
+}
