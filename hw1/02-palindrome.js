@@ -14,7 +14,7 @@ function Pali(info) {
         else {
             amount_1 = amount / 2;
         }
-
+        //
         for (let x = 0; x < amount_1; x++) {
             console.group()
             console.log(info[x]);
