@@ -3,6 +3,7 @@ let elem_re = document.getElementById("result");
 elem.addEventListener('input', handleInput);
 
 //
+//
 function Pali(info) {
     let amount = info.length;
     if (amount > 0) {
