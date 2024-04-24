@@ -1,20 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>05 - Form</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles05.css" />
     <script defer src="05-form.js"></script>
   </head>
-  <body>
-    <main>
-      <form>
-        <h1>Exercise 05 - Form</h1>
-      </form>
-    </main>
+
+  <body class="container">
+    <div class="row"></div>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <main>
+          <form id="form">
+            <fieldset>
+              <legend>
+                <h1>Exercise 05 - Form</h1>
+              </legend>
+              <div class="mb-3">
+                <label for="ful_name" class="form-label">
+                  Full Name:
+                </label>
+                <input type="text" class="form-control" id="ful_name">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">
+                  Email:
+                </label>
+                <input type="email" class="form-control" id="email">
+              </div>
+              <div class="mb-3">
+                <label for="re_st">Registration Status</label>
+                <select id="re_st" class="form-select" aria-label="Default select example">
+                  <option selected>Choose an Option</option>
+                  <option value="0">Un-Registered</option>
+                  <option value="1">Registered</option>
+                  <option value="2">On Hold</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <!--Label was placed to the first one-->
+                <span>Have you taken any of the following courses</span>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="taken_courses_1">
+                  <label class="form-check-label" for="taken_courses_1">Programming Languages</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="taken_courses_2">
+                  <label class="form-check-label" for="taken_courses_2">Operating Systems</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="taken_courses_3">
+                  <label class="form-check-label" for="taken_courses_3">Full Stack Web Development</label>
+                </div>
+              </div>
+              <div class="mb-3 form-group">
+                <label for="more_info">Any Information Left</label>
+                <textarea class="form-control" id="more_info" rows="3"></textarea>
+              </div>
+              <!--Buttons-->
+              <div class="row">
+                <div class="element col-6 d-grid">
+                  <button type="submit" class="btn btn-primary ">Submit</button>
+                </div>
+                <div class="element col-6 d-grid">
+                  <button type="reset" class="btn btn-secondary">Reset</button>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </main>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
   </body>
+
 </html>
