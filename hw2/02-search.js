@@ -64,10 +64,10 @@ function search_string(text, text_find) {
     if (text_len > 0 && find_len <= text_len) {
         for (lp = 0; lp < text_len; lp += 1){
             for (lp_2 = 0; lp_2 < find_len; lp_2 += 1){
-                if (text[lp + lp_2] != text_find[lp_2]) {
+                if (text[lp + lp_2] !== text_find[lp_2]) {
                     lp_2 = find_len;
                 }
-                if (lp_2 == (find_len - 1))
+                if (lp_2 === (find_len - 1))
                     return true;
             }
         }
