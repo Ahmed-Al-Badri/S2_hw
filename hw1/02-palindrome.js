@@ -3,6 +3,7 @@ let elem_re = document.getElementById("result");
 elem.addEventListener('input', handleInput);
 
 //
+//
 function Pali(info) {
     let amount = info.length;
     if (amount > 0) {
@@ -14,7 +15,7 @@ function Pali(info) {
         else {
             amount_1 = amount / 2;
         }
-
+        //
         for (let x = 0; x < amount_1; x++) {
             console.group()
             console.log(info[x]);

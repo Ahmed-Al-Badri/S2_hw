@@ -1,0 +1,14 @@
+.padded {
+  padding-bottom: 10px;
+}
+body {
+  background-color: grey;
+  padding: 100px;
+}
+main {
+  background-color: white;
+  padding: 15px;
+}
+body > div > div {
+  display: inline-block;
+}

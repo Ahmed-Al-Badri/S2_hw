@@ -1,0 +1,18 @@
+{
+  "name": "frontend-homework",
+  "version": "1.0.0",
+  "description": "In this repository, you will find the starter files for the homework assignments for CS 464P/564: Front End Web Technologies.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-plugin-import": "2.29.1",
+    "prettier": "^3.2.5"
+  }
+}
